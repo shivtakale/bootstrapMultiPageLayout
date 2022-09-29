@@ -1,0 +1,123 @@
+
+.carousel-inner, .carousel-item, .carousel-item img{
+    height: 60vh;
+}
+.carousel-item img{
+    object-fit: cover;
+}
+
+#showcase .carousel-caption{
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#showcase .carousel-caption h5{
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+#showcase .carousel-caption p{
+    font-size: 14px;
+}
+
+li.nav-item.active{
+    border-left: 1px solid orange;
+}
+
+.iconThumbnail > i {
+    font-size: 56px;
+}
+.iconThumbnail > h3{
+    font-size: 26px;
+}
+.getReady{
+background-image: url(../images/lights.jpg);
+}
+.getReady,
+.video{    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.getReady::before,
+.video::before{
+    content: '';
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.playBtn:link, .playBtn:visited{
+    color: #fff;
+    font-size: 48px;
+}
+
+.video{
+    background-image: url(../images/media.jpg);
+}
+
+.footer{
+    background-color: #000;
+}
+
+.icons i{
+    font-size: 48px;
+}
+#testimonials .owl-theme .owl-nav{
+    display: none;
+}
+@media all and (min-width:768px){
+    #testimonials .owl-theme .owl-nav {
+        display: block;
+        margin-top: 10px;
+        position: absolute;
+        top: -15px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        transform: rotateY(-50%);
+    }
+    #testimonials button.owl-prev i, #testimonials button.owl-next i{
+        font-size: 50px;
+    }
+    #testimonials button.owl-prev{
+        position: absolute;
+        left: -60px;
+    }
+    #testimonials button.owl-next{
+        position: absolute;
+        right: -60px;
+    }
+}
+
+
+
+
+/* ===============services page CSS============= */
+
+
+.tickMark{
+    font-size: 40px;
+}
+.plans .card{
+    transition: all .4s ease-in-out;
+}
+
+.plans .card:hover{
+        transform:translateY(-20px) scale(1.02)
+}
+
+
+/* ===============FAQ CSS============= */
+.faq .card{
+    background-color: #444;
+}
+
+.faq .card-link:link, .faq .card-link:visited {
+    background-color: #444;
+    color: #fff;
+}
